@@ -68,6 +68,7 @@
                   Please Sign in now
                 </h3>
                 <form
+                  id="loginForm"
                   class="row contact_form"
                   action="#"
                   method="post"
@@ -77,10 +78,10 @@
                     <input
                       type="text"
                       class="form-control"
-                      id="name"
-                      name="name"
+                      id="email"
+                      name="email"
                       value=""
-                      placeholder="Username"
+                      placeholder="Email address"
                     />
                   </div>
                   <div class="col-md-12 form-group p_star">
@@ -93,12 +94,20 @@
                       placeholder="Password"
                     />
                   </div>
+                  <div class="col-md-12 form-group p_star">
+                    <p class="message"></p>
+                  </div>
                   <div class="col-md-12 form-group">
                     <div class="creat_account d-flex align-items-center">
-                      <input type="checkbox" id="f-option" name="selector" />
+                      <input
+                        id="remember"
+                        type="checkbox"
+                        id="f-option"
+                        name="selector"
+                      />
                       <label for="f-option">Remember me</label>
                     </div>
-                    <button type="submit" value="submit" class="btn_3">
+                    <button id="loginBtn" type="button" value="" class="btn_3">
                       log in
                     </button>
                     <a class="lost_pass" href="#">forget password?</a>
@@ -192,5 +201,6 @@
     <script src="js/mail-script.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <script src="js/custom/login.js"></script>
   </body>
 </html>
